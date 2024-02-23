@@ -32,6 +32,10 @@ header {
     box-sizing: inherit;
     font-weight: 400;
     padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid black;
 }
 
 nav ul {
@@ -72,7 +76,7 @@ hr {
     border: 1px solid black;
 }
 
-/* STAYCOURIOUS DIV  */
+/* STAY CURIOUS DIV  */
 
 main {
     display: flex;
@@ -148,21 +152,172 @@ body>main>div.titoli>h3 {
 
 /* SECTION 2 */
 
+
 .contenitorePadre {
     display: flex;
-   
     box-sizing: inherit;
+    border-bottom: 1px solid gray;
 }
 
 .container {
+    margin: 50px 50px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 0;
+
 }
 
 .cella {
-    width: 33.33%;
-    height: 50px;
-    border: 1px solid #ccc;
-    text-align: center;
+    width: 33%;
+    height: fit-content;
+    display: flex;
+    flex-basis: auto;
+
+}
+
+.n {
+    display: inline-block;
+}
+
+.news h2 {
+    display: block;
+    font-size: medium;
+    margin-left: 39px;
+}
+
+.trending {
+    display: block;
+    margin-left: 40px;
+    margin-top: 40px;
+
+}
+
+.trend {
+    width: 25px;
+    display: inline;
+}
+
+.number {
+    color: #F2F2F2;
+    line-height: 38px;
+    font-size: 32px;
+}
+
+.news {
+    display: inline;
+}
+
+img {
+    display: inline;
+}
+
+.news h4 {
+    display: inline;
+}
+
+.news p {
+    color: #6B6B6B;
+    margin-left: 39px;
+}
+
+#solve {
+    display: inline;
+}
+
+/*    CONTENITORE 2 */
+
+.contenitore2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+
+.colonna-sinistra {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    margin-top: 3%;
+    
+
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.author img {
+    border-radius: 50%;
+    width: 8%;
+}
+
+.author p{
+    font-size: small;
+}
+.subtitleLeft{
+    font-size: small;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topic {
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 40px;
+    padding: 3px;
+}
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+.cella-testo{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.cella2 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.cella2 > img {
+    width: 30%;
+}
+
+.cella-testo > p {
+    font-size: 0.8em;
+    
+}
+
+
+/* COLONNA SINISTRA */
+.subject{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: center;
+}
+.sub{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+}
+.colonna-destra {
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+body > div > div.contenitore2 > div.colonna-destra > div:nth-child(3){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid gray;
+    width: 60%;
+
 }
